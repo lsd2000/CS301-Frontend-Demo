@@ -1,22 +1,20 @@
 # Ascenda Admin Frontend
 
-1. Install the dependencies for the frontend application
+## Purpose of the Project
+The Ascenda Admin system facilitates administrative tasks and back-office operations, crucial for supporting the rewards platform. It enhances data visibility, enables access to internal actions, and supports customer and configuration management effectively.
 
-```
-npm install
-```
+## Technology Stack
+- **Frontend Framework**: React with Vite
+- **Language**: TypeScript
+- **UI Library**: Shadcn
+- **Hosting**: AWS S3
+- **Distribution**: AWS CloudFront
 
-2. Run the application
+## Setup Instructions
+Due to dependencies and secrets involved in the setup, the frontend cannot be run locally without access to specific AWS services and configurations.
 
-```
-npm run dev
-```
+## Dependencies
+- **AWS Services**: The system uses various AWS services, including S3 for hosting and CloudFront for distribution. The application is part of a broader AWS-focused module, indicating reliance on multiple AWS resources.
 
-### Application URL
-
-https://d14atmxsur92m1.cloudfront.net/
-
-### Credentials
-
-Email: ascendag2t6@gmail.com
-Password: ascendaG2T6!301
+## Additional Information
+This demo project repository serves primarily as a platform to view code and understand the structure and setup of the application. It is not intended for production use or full functionality without proper configuration.
