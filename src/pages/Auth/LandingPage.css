@@ -1,0 +1,70 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/LandingPageBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden; /* Prevent scrollbars due to blur effect */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%; /* Double the width for a smooth animation */
+    height: 100vh;
+    background-image: url('../../assets/LandingPageBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px) brightness(0.75); /* Adjust values according to your preference */
+    animation: slide 60s linear infinite; /* Adjust the duration and speed as needed */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move the image to the left by 50% of its width */
+    }
+}
+
+.LandingPageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95vw;
+    height: 85vh;
+    position: relative;
+    z-index: 1; /* Place the container above the overlay */
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 85vh;
+    margin: 5vw;
+    order: 1;
+    padding: 2vw;
+    flex-wrap: wrap;
+}
+
+.textContainer h1 {
+    margin: 0 auto;
+    color: rgb(67, 78, 196);
+    font-size: 70px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.LoginForm {
+    margin-left: 5vw;
+    order: 2;
+}

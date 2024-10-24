@@ -1,0 +1,9 @@
+.AddUserButton {
+  background-color: white;
+  color: rgb(34, 40, 90);
+  border: 1px lightgrey solid;
+}
+
+.AddUserButton:hover{
+    background-color: lightgrey;
+}

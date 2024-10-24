@@ -1,0 +1,19 @@
+.adminPageContainer{
+    display:flex;
+    margin:25px;
+    width: 100%;
+}
+
+.introductionText{
+    text-align: left;
+    margin:10px;
+}
+
+.table-container{
+    width:100%;
+}
+
+
+
+
+  
